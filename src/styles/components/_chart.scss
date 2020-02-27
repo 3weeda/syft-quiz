@@ -1,0 +1,135 @@
+.chart {
+  margin-bottom: 25px;
+}
+
+.platforms {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: left;
+  margin-bottom: 25px;
+
+  &__items {
+    display: flex;
+    justify-content: center;
+
+    li {
+      display: flex;
+      border-radius: 10px;
+      border: solid 1px #d3d3d349;
+      padding: 22px 32px;
+      margin-right: 10px;
+      box-shadow: 3px 5px 13px -10px rgba(0, 0, 0, 0.56);
+      align-items: center;
+    }
+
+    img {
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+    }
+  }
+
+  &__text {
+    margin: 0 15px 0 35px;
+    color: #777;
+  }
+
+  &__select {
+    position: relative;
+
+    &--list,
+    &--menu {
+      border: solid 1px #777;
+      box-shadow: 3px 5px 13px -7px rgba(0, 0, 0, 0.56);
+      border-radius: 5px;
+      width: 144px;
+      padding: 6px 8px;
+      font-size: 12px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    &--menu {
+      position: absolute;
+      top: 30px;
+      padding: 6px 60px 6px 8px;
+      transform: translateX(-8px);
+    }
+    &--arrow {
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 7px solid #7e7d7d;
+      border-radius: 2px;
+      position: absolute;
+      top: 12px;
+      right: 10px;
+    }
+
+    .Dropdown-arrow-wrapper {
+      width: 130px;
+      height: 30px;
+      bottom: 0px;
+      position: absolute;
+    }
+    .Dropdown-option {
+      padding: 2px 0;
+    }
+  }
+}
+
+.graph {
+  height: 500px;
+  border-radius: 10px;
+  border: solid 1px #d3d3d349;
+  padding: 0 50px 20px;
+
+  &__header {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: solid 1px #777;
+    margin-bottom: 20px;
+
+    > p {
+      margin-right: 30px;
+      font-size: 13px;
+      color: #777;
+    }
+    img {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 22px;
+      }
+    }
+  }
+
+  &__add {
+    font-size: 35px;
+    font-weight: 100;
+    border: dashed 2px#fc6a03;
+    color: #fc6a03;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 20px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #fc6a03;
+        color: #fff;
+    }
+  }
+
+  &__chart {
+
+  }
+}

@@ -1,0 +1,116 @@
+.boardheader {
+  display: flex;
+  width: 100%;
+  padding-bottom: 35px;
+  flex-wrap: wrap;
+  border-bottom: solid 1px #d3d3d34d;
+
+  &__add {
+    min-width: 140px;
+    height: 45px;
+    box-shadow: 3px 5px 13px -7px rgba(0, 0, 0, 0.56);
+    border-radius: 5px;
+    background-color: #fc6a03;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1px;
+    cursor: pointer;
+    align-self: flex-end;
+    justify-self: end;
+    margin-bottom: 18px;
+    transition: all 0.2s ease-in;
+
+    span {
+      font-size: 30px;
+      font-weight: 100;
+      position: relative;
+      top: 4px;
+      margin-right: 5px;
+    }
+
+    &:hover {
+      background-color: lighten($color: #fc6a03, $amount: 10%);
+    }
+  }
+}
+
+.creator {
+  width: 80%;
+  height: 130px;
+  margin-right: auto;
+  z-index: 50;
+
+  &__title {
+    text-align: left;
+    color: #7e7d7d;
+    margin: 0 0 15px 20px;
+  }
+
+  &__list {
+    max-width: 360px;
+    width: 40%;
+    border: solid 1px #d3d3d349;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 10px 44px -43px rgba(0, 0, 0, 0.56);
+    position: absolute;
+    background-color: #fff;
+
+    li {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px 7% 0;
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+      background-color: #fff;
+
+      &:hover {
+        background-color: #d3d3d34d;
+      }
+    }
+
+    &--underline {
+      width: 100%;
+
+      &::after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 95%;
+        padding-top: 20px;
+        border-bottom: solid 1px #d3d3d34d;
+      }
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: solid 2px #fc6a03;
+      margin-right: 8%;
+    }
+    p {
+      font: 10px;
+      color: #7e7d7d;
+      font-weight: 500;
+    }
+
+    &--active {
+      background-color: #d3d3d34d !important;
+    }
+  }
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 9.5px solid #7e7d7d;
+  border-radius: 2px;
+  position: absolute;
+  right: 20px;
+}

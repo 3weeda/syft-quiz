@@ -1,0 +1,53 @@
+.sidebar {
+  width: 90px;
+  height: 750px;
+  background-color: #152238;
+  color: #fff;
+  font-size: 10px;
+  padding: 35px 0;
+
+  ul {
+    transform: translateX(-7.5px);
+  }
+
+  &__item {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 50px;
+
+    &:hover img {
+      border: solid 2px #fff;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 0.2s ease-in;
+    margin-bottom: 2px;
+  }
+
+  &__add {
+    font-size: 45px;
+    font-weight: 100;
+    border: dashed 2px#fff;
+    border-radius: 15px;
+    margin: auto;
+    width: 45px;
+    height: 45px;
+    line-height: 28px;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      cursor: pointer;
+      color: #152238;
+      background-color: #fff;
+    }
+  }
+}
